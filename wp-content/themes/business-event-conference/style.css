@@ -1,0 +1,275 @@
+/*
+Theme Name: Business Event Conference
+Template: bizberg
+Text Domain: business-event-conference
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/
+Theme URI: https://bizbergthemes.com/downloads/business-event-conference/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: WordPress Theme for Events and Conferences. Business Event Conference theme is a dedicated event WordPress theme for business meetups, technology conferences and exhibitions, product release events, business conferences and all other sorts of marketing and business events. A theme compatible with WP Event Manager plugin. Also, It offers special features and templates so it works perfectly with all page builders like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, etc. This Free WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. If you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, all the sections are made from Elementor.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.6
+Tested up to: 5.8
+Requires PHP: 5.6
+Requires at least: 4.9
+*/
+
+.blog-listing.no-sidebars .blog-post header.entry-header{
+    margin-top: 0 !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+    letter-spacing: 0;
+}
+
+.featured-post{
+	padding: 50px 0 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.featured-post .section-title{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto 20px;
+}
+
+.featured-post .section-title h2{text-transform: uppercase;}
+
+.featured-post .section-title span{color: #e91e63;}
+
+.featured-post-item{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+
+.featured-post .featured-post-image{
+	height: 260px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all ease 0.5s;
+	overflow: hidden;
+}
+
+.featured-post-item .featured-cats {
+    background: #fff;
+    padding: 10px 20px;
+    top: 15px;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.featured-post-item:hover .featured-cats{
+	color: #fff;
+	transition: all ease 0.5s;
+}
+
+.featured-post-item .featured-cats::before{
+	background: #e91e63;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	transition: all ease 0.5s;
+	z-index: -1;
+}
+
+.featured-post-item:hover .featured-cats::before{
+	width: 100%;
+	transition: all ease 0.5s;
+}
+
+.featured-post .featured-post-content .featured-date{
+	color: #878787;
+	font-style: italic;
+	padding: 20px 0 5px;
+	display: block;
+}
+
+.featured-post .featured-post-content{position: relative; background: #fff;}
+
+.featured-post .featured-post-content h4{text-transform: uppercase;}
+
+.featured-post-image .featured-cats i {
+	padding-right: 5px;
+}
+
+@media (pointer: fine) {
+	.blog-nosidebar-1#blog.blog-lists .no-sidebars{
+		padding: 5px;
+		margin-bottom: 0px;
+	}
+}
+
+.agency .header-section, 
+.agency .header, 
+.agency section:nth-child(even){
+     background: transparent;
+}
+
+.agency a:hover, 
+.agency .navbar-inverse .navbar-nav .nav-link:hover, 
+.agency .navbar-inverse .navbar-nav .active > .nav-link, 
+.agency .navbar-inverse .navbar-nav .nav-link.active{color: #820529;}
+
+.agency .dropdown-item:hover, 
+.agency .header .navbar-nav .has-submenu > ul li:hover > ul li:hover{background:#820529; color: #fff; border-color:#820529;}
+
+.agency .carousel-caption{bottom: inherit; top:25%; background: transparent; color: #fff; max-width: 80%;}
+
+.agency span.cat-title, 
+.agency .carousel-caption h1, 
+.agency .carousel-caption p{color: #fff;}
+
+.agency span.cat-title{font-size: 24px; padding-bottom: 15px;}
+
+.agency .carousel-caption h1{font-size: 4rem; margin-bottom:15px;}
+
+.agency .carousel-caption h1 a{color: #fff;}
+
+.agency .btn-primary{color: #fff; border-color:#fff;}
+
+.agency .btn-primary:hover, 
+.agency .form-wrapper a.btn.btn-primary:hover{background: #820529; color: #fff;  border-color:#820529; }
+
+.agency .slider-section .slick-prev, 
+.agency .slider-section .slick-next{
+    left: 0;
+    top: 45%;
+    background: #820529;
+    border-radius:0px;
+    color: #fff;
+    box-shadow: none;
+}
+
+.agency .slider-section .slick-next{
+    left: inherit;
+    right: 0;
+}
+
+.agency .slick-prev:before, 
+.agency .slick-next:before{color: #fff;}
+
+.agency .single-grid-item img, 
+.agency .single-grid-item{transition: all ease-in-out 0.5s;}
+
+.agency .single-grid-item:hover img {
+    transform: scale(1.2);
+    transition: all ease-in-out 0.8s;
+}
+
+.agency div#isotope-grid .col-md-4 {
+    padding: 0 5px 10px;
+}
+
+.agency ul.filters li{
+    border: 1px solid #820529;
+    color: #820529;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.agency li.filter:hover, 
+.agency li.filter.active{
+    background: #820529;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.agency li.filter a{color:#820529; text-transform: capitalize;  font-size: 14px;}
+
+.agency li.filter:hover a, 
+.agency li.filter.active a{
+    color: #fff;
+}
+
+.agency li.filter a:hover:before, 
+.agency li.filter.active a:before{
+    display: none;
+}
+
+.agency .c_column{margin-bottom: 0;}
+
+.agency  .c_column img {
+    width: 100%;
+}
+
+.agency .course-content h3{font-weight: 500; color: #820529;}
+
+.artist-lists-wrap {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.artist-lists-wrap .artist-wrap {
+  padding: 20px 5px;
+  text-align: center;
+}
+
+.artist-lists-wrap .artist-wrap img {
+  border: 6px solid #eee;
+  margin-bottom: 10px;
+}
+
+.artist-lists-wrap .artist-wrap h5 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+.exhib-content {
+  padding: 10px;
+}
+
+.exhib-content .exhib-image {
+  position: relative;
+}
+
+.exhib-content .exhib-image a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000cf), to(transparent));
+  background: linear-gradient(360deg, #000000cf, transparent);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.exhib-content .exhib-image:hover a::after {
+  opacity: 1;
+}
+
+.exhib-content .exhib-image:hover h4 {
+  opacity: 1;
+  z-index: 1;
+}
+
+.exhib-content .exhib-image h4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
